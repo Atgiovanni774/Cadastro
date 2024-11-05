@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    color: #000000C0;
+
+}
+
+body{
+    background-color: #0c0ce94d;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 212);
+}
+
+.imagem{
+    background-color: #fde3a7d7;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6.3rem;
+}
+
+.imagem img{
+    width: 25rem;
+}
+
+.form{
+    background-color: #fff;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.line-0{
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.line-0 h1{
+    font-size: 25px;
+    color: black;
+}
+
+.line-0 h1::before{
+    content: "Cada" ;
+    border-bottom: #6C63FF solid 5px;
+    border-radius: 3px;
+}
+
+.entrar{
+    width: 30px;
+}
+
+.perguntas{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.line-1{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.line-2{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.line-3{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.perguntas input{
+    width: 80%;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 6px #0000001c;
+    border: none;
+    color: black;
+    transition: 0.9s;
+}
+
+.perguntas label{
+    margin-bottom: 10px;
+}
+
+.perguntas input:hover{
+    color: #EEEEEE75;
+}
+.genero{
+    margin-bottom: 20px;
+}
+
+.genero-titulo{
+    margin-bottom: 10px;
+}
+
+.continuar{
+    margin-bottom: 25px;
+    width: 400px;
+    justify-content: center;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    background-color: #6C63FF;
+    padding: 7px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.9s;
+}
+
+input::placeholder{
+    font-size: 12px;
+    color: #000000BE;
+}
+
+button:hover{
+    background-color: #6B63FFF1;
+}
+
+
+@media(max-width: 768px){
+    .imagem{
+        width: 0%;
+        background-color: none;
+        padding: 0;
+    }
+
+    .imagem img{
+        width: 0;
+    }
+
+    .container{
+        width: 70%;
+    }
+
+    .form{
+        width: 100%;
+    }
+}
